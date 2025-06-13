@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Logging In...</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    .checkmark {
+      font-size: 5rem;
+      color: #00e676;
+      margin-bottom: 1rem;
+      animation: pop 0.6s ease-in-out;
+    }
+    @keyframes pop {
+      0% { transform: scale(0); opacity: 0; }
+      100% { transform: scale(1); opacity: 1; }
+    }
+  </style>
+</head>
+<body class="dark-bg">
+  <div class="auth-container">
+    <div class="checkmark">✅</div>
+    <h2>Login Successful</h2>
+    <p>Redirecting to your feed...</p>
+  </div>
+
+  <script>
+    setTimeout(() => {
+      window.location.href = "home.html";
+    }, 2000);
+  </script>
+</body>
+</html>
