@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Sign Up - Alsagram</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="dark-bg">
+  <div class="auth-container">
+    <h2>Create Account</h2>
+    <form onsubmit="return handleSignup(event)">
+      <input type="text" placeholder="Username" required />
+      <input type="email" placeholder="Email" required />
+      <input type="password" placeholder="Password" required />
+      <button class="btn" type="submit">Sign Up</button>
+    </form>
+    <p style="margin-top: 1rem;">Already have an account? <a href="index.html" style="color:#00bcd4;">Login</a></p>
+  </div>
+
+  <script>
+    function handleSignup(event) {
+      event.preventDefault();
+      window.location.href = "signup-success.html";
+    }
+  </script>
+</body>
+</html>
